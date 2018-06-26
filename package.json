@@ -4,7 +4,9 @@
   "description": "三国杀风格卡牌生成器",
   "main": "automation.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "phantomjs-prebuilt": "^2.1.12"
-  }
+    "phantomjs-prebuilt": "^2.1.12",
+    "snyk": "^1.85.0"
+  },
+  "snyk": true
 }
